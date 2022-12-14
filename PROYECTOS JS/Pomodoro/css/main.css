@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(186, 73, 73);
+    color: white;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    /* border: solid 1px yellow; */
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0;
+    flex-direction: column;
+
+}
+
+#app #time {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0;
+    width: 80%;
+    height: 20%;
+    border-radius: 4px;
+
+}
+
+#app #time #value {
+    font-size: 64px;
+}
+
+#app #time #bt-start button {
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(186, 73, 73);
+    cursor: pointer;
+}
+
+#app .tasks-container {
+    width: 80%;
+    margin-top: 20px;
+}
+
+#app .tasks-container p {
+    border-bottom: 2px solid white;
+    height: 30px;
+}
+
+#app .tasks-container .form #form {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#app .tasks-container .form #form #it-Task {
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#app .tasks-container .form #form #bt-Add {
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+#tasks {
+    background-color: brown;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#tasks .task {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px;
+}
+
+.done {
+    background-color: #333;
+}
