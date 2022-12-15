@@ -62,6 +62,7 @@ body {
     justify-content: space-between;
     margin: 10px 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #app .tasks-container .form #form #it-Task {
@@ -78,12 +79,12 @@ body {
     cursor: pointer;
     font-weight: 500;
 
+
 }
 
 #tasks {
     background-color: brown;
     border-radius: 4px;
-    /* box-sizing: border-box; */
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -96,6 +97,7 @@ body {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 5px 5px 0px 5px;
+    border-bottom: #333;
 }
 
 .done {
