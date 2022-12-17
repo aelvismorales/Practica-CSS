@@ -20,7 +20,6 @@ body {
 }
 
 .card input {
-    /* display: flex; */
     font-size: 28px;
     padding: 10px;
     border: solid 1px rgb(45, 145, 226);

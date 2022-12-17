@@ -38,8 +38,6 @@ body {
     padding: 5px 10px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-
     transition: all 0.3s ease-in-out;
 }
 
@@ -69,11 +67,9 @@ body {
     background: none;
     cursor: pointer;
     color: #999;
-
     transition: color 0.3s ease-in-out;
 }
 
 .search-bar-container .actions button:hover {
     color: #2979e2;
-
 }
