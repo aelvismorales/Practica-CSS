@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+.people-container {
+    margin: 100px auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.people-container .person {
+    position: relative;
+    margin-right: -15px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.people-container .person img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px white;
+    background-color: yellowgreen;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.people-container .person:hover img {
+    transform: translateY(-2px);
+}
+
+.people-container .person .name {
+    position: absolute;
+    background-color: black;
+    color: #FFF;
+    display: none;
+    border-radius: 5px;
+    border: solid 1px white;
+    min-width: 100px;
+    width: 150px;
+    top: -60px;
+    left: calc(-50% - 38px);
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.people-container .person:hover .name {
+    display: inline-block !important;
+}
+
+.people-container .person .name .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+.people-container .person .name::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: solid 10px black;
+    border-bottom: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    left: calc(50% - 10px);
+    bottom: -20px;
+
+}
