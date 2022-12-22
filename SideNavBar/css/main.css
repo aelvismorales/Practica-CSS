@@ -1,0 +1,78 @@
+:root {
+    --width: 300px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+    background-color: #222;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+
+    transition: width 0.3s ease-in-out;
+}
+
+nav:hover {
+    width: var(--width);
+}
+
+nav .bar {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: end;
+}
+
+nav .user {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 180px;
+    width: var(--width);
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+nav:hover .user {
+    transform: translate(0);
+    opacity: 1;
+}
+
+nav .user img {
+    width: 52px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+nav .links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: var(--width);
+    overflow: hidden;
+}
+
+nav .links a .icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .links a:hover {
+    background-color: rgb(45, 168, 195);
+    color: rgb(255, 166, 0);
+}
